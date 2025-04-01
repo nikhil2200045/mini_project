@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News APP</title>
+    <link rel="stylesheet" href="mini_pro.css">
+</head>
+<body>
+    <nav>
+    <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="logo">
+            <img src="download.png" alt="company logo">
+        </a>
+        <div class="navlink">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="Astrology" onclick="onNav('Astrology')">Astrology</li>
+                <li class="hover-link  nav-item" id="Market" onclick="onNav('Market')">Market</li>
+                <li class="hover-link  nav-item" id="politics" onclick="onNav('politics')">Politics</li>
+                <li class="hover-link  nav-item" id="Health" onclick="onNav('Health')">Health</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="newsinput" placeholder="e.g. Business">
+            <button id="search-button" class="searchb">Search</button>
+        </div>
+    </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+           
+        </div>
+    </main>
+    <template id="template-news">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="card-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="title" id="title">this is title</h3>
+                <h6 class="source" id="source">end gadget</h6>
+                <p class="news-description"id="news-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatem numquam facere porro quo nulla labore eligendi at. Debitis ipsum ex nisi magnam?</p>
+            </div>
+        </div>
+    </template>
+</body>
+<script src="./mini_pro.js"></script>
+</html>
